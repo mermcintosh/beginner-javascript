@@ -45,3 +45,22 @@ teller.last = null
 //and it hasn't been set
 let dog;
 console.log(dog);
+
+//booleans
+let age = 18
+const ofAge = age > 19
+
+// ==
+10 == 10
+"10" == 10
+//both of the above will equal to true
+//because == only checks the value not the type
+
+// ===
+//will check values AND check the type
+
+10 === 10
+//will return true
+
+'10' === 10
+//will return false 
