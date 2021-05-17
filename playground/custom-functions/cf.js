@@ -2,10 +2,9 @@
 
 // this is a function definition
 //billAmount and taxRate are parameters (placeholders)
-function calculateBill(billAmount, taxRate){
+function calculateBill(billAmount, taxRate = 0.13, tipRate = 0.15){
     //this is the function body
-    console.log("running calculate bill")
-    const total = billAmount * (1 + taxRate)
+    const total = billAmount + (billAmount * taxRate) + (billAmount * tipRate)
     return total;
 
 }
@@ -21,3 +20,4 @@ function calculateBill(billAmount, taxRate){
 
 // const greeting = sayHiTo()
 
+//if you want to use the default value, you need to put undefined in the argument
