@@ -8,19 +8,45 @@ people.forEach((person, index) => {
   console.log(person.name);
 });
 
-// Console Methods
+// 
 
-// Callstack
+// Console Methods
+// console.error
+// console.warn
+// console.table
+// console.count
+// console.group or console.groupCollasped
+// console.groupEnd
+
+// Callstack, Stack Trace 
 
 // Grabbing Elements
+//go to dev tools and select something on the page
+//then go to the console and type $0 and it will show 
+//what you have currently selected
+//then if you type $1 it will show you the second most recent
+//one you selected
 
-// Breakpoints
+//you can also go to a site and type $('p') and this will return the first paragraph
+//on the page for example or
+//type $$('p') to see all the paragraphs on the page
+
+// Breakpoints (15 minute mark)
+//you can type debugger in a function and it will pause
+//javascript from running
+//you can see the breakpoint(debugger) in the devtools under sources
+
+// can also go to the sources tab and look at the js file and put a breakpoint (like a debugger)
+//by clicking a line of code and it will add a blue error
 
 // Scope
 
 // Network Requests
 
 // Break On Attribute
+//if you trying to find a specific piece of javascript functionality
+//you can right click on the line of code that is changing in the html and click break on and select
+//practice using those resources
 
 // Some Setup Code
 
