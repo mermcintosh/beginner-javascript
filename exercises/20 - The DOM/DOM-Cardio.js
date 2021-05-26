@@ -1,15 +1,22 @@
 console.log('it works')
 // Make a div
 const div = document.createElement('div')
-console.log(div)
+
 // add a class of wrapper to it
-div.className = "wrapper"
+// div.className = "wrapper"
+div.classList.add('wrapper')
+
 // put it into the body
 document.body.append(div)
 
 // make an unordered list
 const ul = document.createElement('ul')
-console.log(ul)
+// const anotherUl = `<ul>
+// <li>one</li>
+// <li>two</li>
+// <li>three</li>
+// </ul>
+// `
 
 // add three list items with the words "one, two, three" in them
 const li1 = document.createElement('li')
@@ -32,20 +39,37 @@ image.src = "https://thehappypuppysite.com/wp-content/uploads/2018/10/miniature-
 // set the width to 250
 image.width = 250
 // add a class of cute
-image.ClassName = "cute"
+// image.ClassName = "cute"
+image.classList.add('cute')
+
 // add an alt of Cute Puppy
 image.alt = "Cute Puppy"
 // Append that image to the wrapper
 div.append(image)
 
 // with HTML string, make a div, with two paragraphs inside of it
-const paragraphs = document.createElement("p")
+const div2 = document.createElement("div")
+div2.innerHTML = `
+<p class="remove">This is the first paragraph.</p>
+<p class="warning">This is the second paragraph.</p>
+`
+div.append(div2)
+
 // put this div before the unordered list from above
+ul.insertAdjacentElement("afterbegin", div2)
 
 // add a class to the second paragraph called warning
+//DONE
+
 // remove the first paragraph
+const removeParagraph = document.querySelector(".remove")
+removeParagraph.remove()
+
 
 // create a function called generatePlayerCard that takes in three arguments: name, age, and height
+function generatePlayerCard(name, age, height){
+
+}
 
 // have that function return html that looks like this:
 // <div class="playerCard">
@@ -54,6 +78,9 @@ const paragraphs = document.createElement("p")
 // </div>
 
 // make a new div with a class of cards
+const cards = document.createElement('div')
+cards.className = "cards"
+
 
 // make 4 player cards using generatePlayerCard
 

@@ -1,12 +1,16 @@
 const people = [
-  { name: 'Wes', cool: true, country: 'Canada' },
-  { name: 'Scott', cool: true, country: 'Merica' },
-  { name: 'Snickers', cool: false, country: 'Dog Country' },
+  { name: 'Peter Parker', cool: false, country: 'United States' },
+  { name: 'Thor', cool: true, country: 'Asgard' },
+  { name: `T'Challa`, cool: true, country: 'Wakanda' },
 ];
 
-people.forEach((person, index) => {
-  console.log(person.name);
-});
+// console.table(people)
+
+// people.forEach((person, index) => {
+//   if (person.name === "Peter Parker"){
+//     console.error("Not the best super hero")
+//   }
+// });
 
 // 
 
@@ -50,7 +54,16 @@ people.forEach((person, index) => {
 
 // Some Setup Code
 
+function doALotOfStuff(){
+  console.group("Doing some superhero stuff");
+  console.log("Hey I'm Ironman")
+  console.warn("Watch Out for Thanos")
+  console.error("I love you 3000")
+  console.groupEnd("Doing some superhero stuff");
+}
+
 function doctorize(name) {
+  console.count('running doctorize')
   return `Dr. ${name}`;
 }
 
