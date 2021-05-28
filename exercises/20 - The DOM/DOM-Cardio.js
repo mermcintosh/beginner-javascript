@@ -58,10 +58,11 @@ div2.innerHTML = `
 div.append(div2)
 
 // put this div before the unordered list from above
-ul.insertAdjacentElement("afterbegin", div2)
+ul.insertAdjacentElement("beforebegin", div2)
 
 // add a class to the second paragraph called warning
 //DONE
+
 
 // remove the first paragraph
 const removeParagraph = document.querySelector(".remove")
