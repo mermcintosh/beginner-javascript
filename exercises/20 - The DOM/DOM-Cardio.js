@@ -38,6 +38,8 @@ const image = document.createElement('img')
 image.src = "https://thehappypuppysite.com/wp-content/uploads/2018/10/miniature-pug-long.jpg"
 // set the width to 250
 image.width = 250
+image.height = 250
+//we can add height so it doesn't jump around on the page
 // add a class of cute
 // image.ClassName = "cute"
 image.classList.add('cute')
