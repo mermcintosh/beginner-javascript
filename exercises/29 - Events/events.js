@@ -121,7 +121,8 @@ console.log(buyButtons)
 //and the browser will pass us a variable called buyButton when it runs it for us
 
 buyButtons.forEach(function(buyButton) {
-    console.log(buyButton);
+    console.log('Binding the buy button');
+    buyButton.addEventListener("click", buyItem)
 })
 
 
