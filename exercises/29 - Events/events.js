@@ -73,3 +73,30 @@ butts.removeEventListener('click', handleClick)
 //but because we have stored it in a variable, 
 //it will infer the function from the variable name and 
 //we can still reference it because it's stuck in a variable.
+
+//NEXT SECTION is listening to events on multiple elements
+//we created 10 buttons all with the same class ("buy")
+
+const buyButtons = document.querySelectorAll("button.buy")
+console.log(buyButtons)
+//this gives us a node list of all of the buttons
+
+// You might think, why can't we just go ahead and 
+//take our buy buttons and add an event listener of click like so
+
+// function buyItem() {
+//     console.log('BUYING ITEM');
+//   }
+//   buyButtons.addEventListener('click', buyItem);
+
+// the above function will return an error saying
+// buyButtons.addEventListener is not a function
+
+//sure enough if we look console.log(buyButtons), and open up one of 
+//button varialbes, addEventListener is not an available method
+
+// if we do 
+// console.dir(butts)
+//we weill see addEventListener somewhere in the giant list
+
+
