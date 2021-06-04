@@ -104,6 +104,7 @@ cardsHTML += generatePlayerCard('snickers', 12, 150);
 // append those cards to the div
 cards.innerHTML = cardsHTML
 // put the div into the DOM just before the wrapper element
+div.insertAdjacentElement('beforebegin', cards)
 // Bonus, put a delete Button on each card so when you click it, the whole card is removed
 
 // select all the buttons!
