@@ -74,6 +74,9 @@ butts.removeEventListener('click', handleClick)
 //it will infer the function from the variable name and 
 //we can still reference it because it's stuck in a variable.
 
+
+
+
 //NEXT SECTION is listening to events on multiple elements
 //we created 10 buttons all with the same class ("buy")
 
@@ -98,5 +101,28 @@ console.log(buyButtons)
 // if we do 
 // console.dir(butts)
 //we weill see addEventListener somewhere in the giant list
+
+//if we want to add the event listener to ALL the buy buttons,
+//we will have to loop over and for each element attach it individually
+
+//in the buyButtons prototype, there was a method called forEach. That is going to allow
+//us to loop over each of the items
+
+// FOREACH
+// forEach is a method that will run a function for each item in our node list.
+// We can pass it an anonymous function, 
+//which is common when we are looping since we don't have the 
+//same limitations as we did in event listeners.
+
+//forEach function will give you an argument that is the each of
+//the individual buttons, and we can name it whatever we want
+
+//we can call it buyButton. it is just a parameter (aka a placeholder)
+//and the browser will pass us a variable called buyButton when it runs it for us
+
+buyButtons.forEach(function(buyButton) {
+    console.log(buyButton);
+})
+
 
 
