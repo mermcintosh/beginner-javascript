@@ -7,7 +7,7 @@ const div = document.createElement('div')
 div.classList.add('wrapper')
 
 // put it into the body
-document.body.append(div)
+document.body.appendChild(div)
 
 // make an unordered list
 const ul = document.createElement('ul')
@@ -74,6 +74,15 @@ function generatePlayerCard(name, age, height){
 
 }
 
+function generatePlayerCard(name, age, height){
+    const html = `
+    <div class="playerCard">
+    <h2>${name} - ${age}</h2>
+    <p>They are ${height} and ${age} years old. In Dog years this person would be ${age * 7}. That would be tall!</p>
+    </div>
+    `;
+    return html
+}
 // have that function return html that looks like this:
 // <div class="playerCard">
 //   <h2>NAME — AGE</h2>

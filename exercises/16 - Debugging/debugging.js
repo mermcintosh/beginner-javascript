@@ -54,16 +54,16 @@ const people = [
 
 // Some Setup Code
 
-function doALotOfStuff(){
-  console.group("Doing some superhero stuff");
-  console.log("Hey I'm Ironman")
-  console.warn("Watch Out for Thanos")
-  console.error("I love you 3000")
-  console.groupEnd("Doing some superhero stuff");
-}
+// function doALotOfStuff(){
+//   console.group("Doing some superhero stuff");
+//   console.log("Hey I'm Ironman")
+//   console.warn("Watch Out for Thanos")
+//   console.error("I love you 3000")
+//   console.groupEnd("Doing some superhero stuff");
+// }
 
 function doctorize(name) {
-  console.count('running doctorize')
+  // console.count('running doctorize')
   return `Dr. ${name}`;
 }
 
@@ -73,7 +73,7 @@ function greet(name) {
 }
 
 function go() {
-  const name = doctorize(greet('Wes'));
+  const name = doctorize(greet('Meredith'));
   console.log(name);
 }
 
