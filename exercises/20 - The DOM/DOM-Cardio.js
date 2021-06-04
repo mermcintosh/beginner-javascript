@@ -96,7 +96,13 @@ cards.className = "cards"
 
 // make 4 player cards using generatePlayerCard
 
+let cardsHTML = generatePlayerCard('wes', 12, 150);
+cardsHTML += generatePlayerCard('scott', 12, 150);
+cardsHTML += generatePlayerCard('kait', 12, 150);
+cardsHTML += generatePlayerCard('snickers', 12, 150);
+
 // append those cards to the div
+cards.innerHTML = cardsHTML
 // put the div into the DOM just before the wrapper element
 // Bonus, put a delete Button on each card so when you click it, the whole card is removed
 
