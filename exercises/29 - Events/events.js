@@ -12,9 +12,9 @@ const butts = document.querySelector('.butts')
 //is as an anonymous function.
 
 // For example,
-butts.addEventListener('click', function() {
-console.log("ive been clicked")
-});
+// butts.addEventListener('click', function() {
+// console.log("ive been clicked")
+// });
 
 // above is an anonymous function because there is no name to the 
 //function, no way for us to reference that function 
@@ -40,3 +40,36 @@ butts.addEventListener('click', handleClick)
 // lines 38 and 39 will return 'i have been click yo' before the button 
 // has even been clicked because handleClick() will do the function
 //on page load.. so we need to do handleClick, not handleClick()
+
+//whats the benefit of having a function that we are passing
+//to the event listener outside of the function?
+
+const coolButton = document.querySelector('.cool')
+
+coolButton.addEventListener('click', handleClick)
+//now this button can also use the handleClick function.
+//so def good to pass in a function!
+
+//another reason would be if i wanted to remove an Eventlistener
+
+butts.removeEventListener('click', handleClick)
+//now that event listener no longer works
+//this is called unbinding
+
+//what is binding?
+//binding is essentially means taking a function and 
+//listening for a specific click within an element
+
+//if i ever in the future might want to remove an event listener,
+//remember to NOT USE AN ANONYMOUS FUNCTION
+
+// const horray = () => console.log("HORRAY");
+// coolButton.addEventListener('click', hooray)
+
+// Shown above 👆is how you would add an event listener 
+// with an arrow function.
+
+// The hooray function is technically an anonymous function, 
+//but because we have stored it in a variable, 
+//it will infer the function from the variable name and 
+//we can still reference it because it's stuck in a variable.
