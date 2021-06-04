@@ -16,7 +16,21 @@ butts.addEventListener('click', function() {
 console.log("ive been clicked")
 });
 
+// above is an anonymous function because there is no name to the 
+//function, no way for us to reference that function 
+//outside of the listener
+
 // There are three steps with event listeners:
     // Go get something
     // Listen for something (such as a click)
     // Do something
+
+// another way is we can create a named function and
+// pass it in as a reference
+//example below
+
+function handleClick() {
+    console.log('i have been clicked yo')
+}
+
+butts.addEventListener('click', handleClick)
