@@ -34,3 +34,9 @@ function handleClick() {
 }
 
 butts.addEventListener('click', handleClick)
+
+// butts.addEventListener('click',
+// handleClick());
+// lines 38 and 39 will return 'i have been click yo' before the button 
+// has even been clicked because handleClick() will do the function
+//on page load.. so we need to do handleClick, not handleClick()
