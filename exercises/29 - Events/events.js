@@ -142,3 +142,9 @@ function handleBuyButtonClick(event) {
 // event.target is the thing that actually got clicked.
 
 // event.currentTarget is the thing that fired the event listener.
+
+// In most cases, you probably want to reach for event.currentTarget 
+// rather than event.target. 
+// Although it is useful to know whether someone clicked an element inside of the element that the listener is on, 
+// or did they click on the actual element with the listener.
+
