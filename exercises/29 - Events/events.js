@@ -130,7 +130,8 @@ buyButtons.forEach(function(buyButton){
     buyButton.addEventListener('click', handleBuyButtonClick)
 })
 
+//below will return the number as a number,not a string
 function handleBuyButtonClick(event) {
     console.log('You are buying it')
-    console.log(event.target.dataset)
+    console.log(parseFloat(event.target.dataset.price))
 }
