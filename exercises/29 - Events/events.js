@@ -148,3 +148,8 @@ function handleBuyButtonClick(event) {
 // Although it is useful to know whether someone clicked an element inside of the element that the listener is on, 
 // or did they click on the actual element with the listener.
 
+//below just shows that if you click anywhere on the page,
+//
+window.addEventListener("click", function(){
+    console.log('you clicked the window')
+})
