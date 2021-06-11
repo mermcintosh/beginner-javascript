@@ -120,10 +120,12 @@ console.log(buyButtons)
 //we can call it buyButton. it is just a parameter (aka a placeholder)
 //and the browser will pass us a variable called buyButton when it runs it for us
 
-buyButtons.forEach(function(buyButton) {
-    console.log('Binding the buy button');
-    buyButton.addEventListener("click", buyItem)
+// buyButtons.forEach(function(buyButton) {
+//     console.log('Binding the buy button');
+//     buyButton.addEventListener("click", buyItem)
+// })
+
+
+buyButtons.forEach(function(buyButton){
+    buyButton.addEventListener('click', handleBuyButtonClick)
 })
-
-
-
