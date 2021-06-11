@@ -129,3 +129,8 @@ console.log(buyButtons)
 buyButtons.forEach(function(buyButton){
     buyButton.addEventListener('click', handleBuyButtonClick)
 })
+
+function handleBuyButtonClick(event) {
+    console.log('You are buying it')
+    console.log(event.target.dataset)
+}
