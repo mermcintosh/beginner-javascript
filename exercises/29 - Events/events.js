@@ -130,8 +130,15 @@ buyButtons.forEach(function(buyButton){
     buyButton.addEventListener('click', handleBuyButtonClick)
 })
 
-//below will return the number as a number,not a string
 function handleBuyButtonClick(event) {
     console.log('You are buying it')
-    console.log(parseFloat(event.target.dataset.price))
+    //below will return the number as a number,not a string
+    // console.log(parseFloat(event.target.dataset.price))
+    console.log(event.target)
+    console.log(event.currentTarget)
+    console.log(event.target === event.currentTarget)
 }
+
+// event.target is the thing that actually got clicked.
+
+// event.currentTarget is the thing that fired the event listener.
